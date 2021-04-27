@@ -1,0 +1,304 @@
+@charset "utf-8";
+
+/* common */
+body {
+    font-size: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* header */
+
+header {
+    color: #fff;
+}
+
+.header-top {
+    height: 74px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    line-height: 74px;
+    color: #fff;
+}
+
+.big-bg {
+    background: url(../img/fv-bgi@2x.jpg);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.menu ul {
+    display: flex;
+    line-height: 74px;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.header-title {
+    border: 2px solid #fff;
+    padding: 20px 150px 30px 20px;
+}
+
+
+/* main */
+/* common */
+.main {
+    width: 1030px;
+    color: #141414;
+}
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.category {
+    margin: 100px 85px 0;
+}
+
+.desc-text {
+    font-size: .85rem;
+}
+
+.sub-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* service */
+.section-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.section-content:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.section-image,
+#service .section-desc {
+    width: 45%;
+}
+
+/* news */
+.articles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icatch {
+    max-width: 320px;
+    height: auto;
+}
+
+article {
+    width: 30%;
+    margin: 0 20px;
+}
+
+.article-desc {
+    margin: 1em 1em;
+    font-size: .85rem;
+    letter-spacing: 2px;
+    line-height: 1.8em;
+}
+
+/* contactUs */
+
+.form-contents {
+    max-width: 700px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-content {
+    margin-bottom: 1rem;
+}
+
+input,
+textarea {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.contents-of-inquiry {
+    width: 100%;
+}
+
+.send-btn {
+    color: #fff;
+    background: #1B1310;
+    padding: 10px 60px;
+    border-radius: 30px;
+    box-shadow: 0 0 6px gray;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+#contactUs .btn {
+    margin: 40px 0;
+    text-align: center;
+}
+
+footer {
+    background: #1B1310;
+    color: #fff;
+    text-align: center;
+    height: 74px;
+    line-height: 74px;
+    font-size: .7rem;
+    letter-spacing: 1px;
+}
+
+
+/* mobile */
+@media (max-width: 420px) {
+    .big-bg {
+        background: url(../img/fv-bgi_sp@2x.jpg);
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .humburger-line {
+        height: 2px;
+        width: 30px;
+        background: #fff;
+        margin-bottom: 5px;
+    }
+
+    .humburger-btn {
+        margin-top: 30px;
+    }
+
+    .humburger-menu-page {
+        height: 100vh;
+        background: #1B1310;
+        color: #fff;
+        position: relative;
+    }
+
+    .humburger-menu {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .humburger-menu li {
+        text-align: center;
+        font-size: 1.25rem;
+        margin: 50px 0;
+    }
+
+    .close-btn {
+        font-size: 3rem;
+        position: absolute;
+        top: 1%;
+        right: 5%;
+        color: #fff;
+    }
+
+    .category {
+        margin: 100px 5% 0;
+    }
+
+    .desc-text {
+        line-height: 2rem;
+        font-size: .9rem;
+        text-align: justify;
+    }
+
+    .section-content,
+    .section-content:nth-child(even)  {
+        flex-direction: column-reverse;
+    }
+
+    .section-image,
+    #service .section-desc {
+    width: 100%;
+    }
+
+    .section-image {
+        margin-top: 50px;
+    }
+
+    .articles {
+        flex-direction: column;
+     }
+
+    article {
+        width: 100%;
+        margin: 0 5px;
+        text-align: center;
+    }
+
+    .article-desc {
+        box-shadow: 0 2px 5px gray;
+        padding: 30px;
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+
+    .icatch {
+        vertical-align: bottom;
+        width: 93%;
+    }
+
+    .form-contents {
+        width: 100%;
+    }
+
+    .send-btn {
+        padding: 20px 100px;
+        border-radius: 30px;
+        font-size: 1.15rem;
+    }
+
+    #contactUs .btn {
+        margin: 70px 0;
+    }
+
+    footer {
+        font-size: .9rem;
+    }
+
+
+
+
+
+
+}
+
